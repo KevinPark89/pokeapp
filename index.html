@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon Universe</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+</head>
+<body>
+	<button type="button" onclick="aud_play_pause()">Play/Pause</button>
+  <header>
+	     <h1 id="page-title">Start your <span><img id= "home" src="assets/Pokemon_logo.png" alt="Pokemon Logo"></span> Journey!</h1>
+  </header>
+
+  <section class="first-choice">
+      <h2>Choose your starter:</h2>
+       <div class="pokeball" data-ball='pokeball-starter'>
+          <img src="assets/Poke_Ball.png" alt="Pokeball">
+       </div>
+  </section>
+
+  <section class="finish-team">
+      <h2>Round out your team:</h2>
+      <div class="pokeball-1 other" data-ball="pokeball-1">
+          <img src="assets/Poke_Ball.png" alt="Pokeball">
+       </div>
+       <div class="pokeball-2 other" data-ball="pokeball-2">
+          <img src="assets/Poke_Ball.png" alt="Pokeball">
+       </div>
+       <div class="pokeball-3 other" data-ball="pokeball-3">
+          <img src="assets/Poke_Ball.png" alt="Pokeball">
+       </div>
+       <div class="pokeball-4 other" data-ball="pokeball-4">
+          <img src="assets/Poke_Ball.png" alt="Pokeball">
+       </div>
+       <div class="pokeball-5 other" data-ball="pokeball-5">
+          <img src="assets/Poke_Ball.png" alt="Pokeball">
+       </div>
+  </section>
+
+<audio id="myAudio">
+      <source src="assets/Pokémon Season 1 Indigo League - Opening Theme.mp3" autoplay>
+</audio>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="pokemon.js"></script>
+
+</body>
+</html>

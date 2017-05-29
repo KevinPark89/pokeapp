@@ -1,0 +1,114 @@
+body {
+	background-color: #DC0A2D;
+}
+
+button {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 50px;
+	width: 200px;
+	border: black 1px solid;
+	background-color: #DC0A2D;
+	color: #FFCB05;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
+}
+
+h1, h2 {
+	font-family: 'Exo 2', sans-serif;
+	margin: 0;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.pokeball, .pokeball-1, .pokeball-2, .pokeball-3, .pokeball-4, .pokeball-5 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.pokeball img, .pokeball-1 img, .pokeball-2 img, .pokeball-3 img, .pokeball-4 img, .pokeball-5 img {
+	width: 150px;
+	height: 150px;
+}
+
+p {
+	font-family: 'Exo 2', sans-serif;
+	padding: 5px;
+	margin: 0;
+}
+
+.pokeball, .other {	
+	background-color: #DC0A2D;
+	width: 400px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.name, .type {
+	text-transform: capitalize;
+}
+
+.pokeimage {
+	text-align: center;
+	background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(../assets/Poke_Ball.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pokeimage img {
+	opacity: none;
+}
+
+.name {
+	border: black 1px solid;
+	background-color: #DC0A2D;
+	color: #FFCB05;
+}
+
+.description {
+	margin-top: 10px;
+}
+
+.pokeimage, .pokemon-name, .pokemon-id, .pokemon-height, .pokemon-weight, .pokemon-type, .pokemon-descrtiption {
+	flex: 1 100%;
+}
+
+.pokeimage, .pokeinfo {
+	flex: 1 auto;	
+}
+
+.pokemon-description {
+	flex: 100%;
+}
+
+span img {
+	width: 250px;
+	transform: translateY(25%);
+}
+
+@media (max-width: 768px) {
+ 	button {
+		height: 35px;
+		width: 150px;
+		font-size: 20px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  	.pokeball, .other {	
+		width: 325px;
+	}
+	button {
+		height: 25px;
+		width: 80px;
+		font-size: 13px;
+	}
+	span img {
+	margin-bottom: 20px;
+	}
+}
