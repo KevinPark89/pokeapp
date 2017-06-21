@@ -13,13 +13,9 @@ pokeApp.init = function() {
 //get pokemon from the database
 pokeApp.getPokemon = function(id, parentClass) {							
 	var getPokemon = $.ajax({
-		url: 'http://proxy.hackeryou.com',
+		url: `https://pokeapi.co/api/v2/pokemon/${id}`,
 		method: 'GET',
-		dataType: 'json',
-		data: {
-			reqUrl: `https://pokeapi.co/api/v2/pokemon/${id}`,
-			useCache: true
-		}
+		dataType: 'json'
 	})
 	//when you get the pokemon from the database, then pull the information by id
 	$.when(getPokemon)	 
@@ -52,13 +48,9 @@ pokeApp.getPokemon = function(id, parentClass) {
 //get description of chosen pokemon (starter or other 5 party members)
 pokeApp.getPokemonDescription = function(id, parentClass) {							
 	var getPokemonDescription = $.ajax({
-		url: 'http://proxy.hackeryou.com',
+		url: `https://pokeapi.co/api/v2/pokemon-species/${id}`,
 		method: 'GET',
-		dataType: 'json',
-		data: {
-			reqUrl: `https://pokeapi.co/api/v2/pokemon-species/${id}`,
-			useCache: true
-		}
+		dataType: 'json'
 	})
 	$.when(getPokemonDescription)
 		.then(function(pokemon){
